@@ -1,9 +1,9 @@
 
-const numero = 5;
+const numero = 10;
 const ehNumeroPar = (numero % 2) === 0;
 
 if (ehNumeroPar) {
-    console.log('O número é par');
+    console.log('O número: ' + numero + ' é par');
 } else {
-    console.log('O número é impar');
+    console.log('O número: ' + numero + ' é impar');
 }
