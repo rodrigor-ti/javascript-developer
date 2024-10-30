@@ -7,14 +7,14 @@ class Pessoa {
     constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
-        this.anoDeNascimento = 2022 - idade;
+        this.anoDeNascimento = 2024 - idade;
     }
 
     descrever() {
         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);  
     }
 }
-
+// função para comparar idades
 function compararPessoas(p1, p2) {
     if (p1.idade > p2.idade) {
         console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`);
@@ -25,7 +25,10 @@ function compararPessoas(p1, p2) {
     }
 }
 
-const vitor = new Pessoa('Vitor', 25);
-const renan = new Pessoa('Renan', 30);
+// intanciando pessoas
+const rodrigo = new Pessoa('Rodrigo', 34);
+const joao = new Pessoa('João', 30);
 
-compararPessoas(vitor, renan);
+// chamando a função para comparar
+compararPessoas(rodrigo, joao);
+
